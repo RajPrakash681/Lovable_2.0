@@ -1,0 +1,2 @@
+generate:
+	baml-cli generate
