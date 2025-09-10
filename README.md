@@ -198,9 +198,7 @@ git push origin feature/AmazingFeature
 
 ---
 
-## 📜 **License & Acknowledgments**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### 🙏 **Special Thanks**
 
@@ -215,7 +213,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### ✨ **Built with Passion, Powered by AI, Designed for the Future** ✨
 
-**[🌐 Live Demo](https://lovable2.0.demo)** | **[📚 Documentation](https://docs.lovable2.0)** | **[🐛 Report Bug](https://github.com/RajPrakash681/Lovable2.0/issues)** | **[💡 Request Feature](https://github.com/RajPrakash681/Lovable2.0/issues)**
+  **[📚 Documentation](https://docs.lovable2.0)** | **[🐛 Report Bug](https://github.com/RajPrakash681/Lovable2.0/issues)** | **[💡 Request Feature](https://github.com/RajPrakash681/Lovable2.0/issues)**
 
 ---
 
