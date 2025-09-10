@@ -2,7 +2,6 @@
 
 > **Transform your wildest ideas into stunning web applications using nothing but natural language. Experience the future of development today.**
 
-<div align="center">
 
 ![LovaYou'll need cloud service tokens and the websocket URL, printed in your shell after running the command below.le 2.0 Banner](https://via.placeholder.com/800x300/0a0a0a/ffffff?text=✨+Lovable+2.0+✨)
 
