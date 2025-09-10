@@ -9,7 +9,7 @@ image = (
     .add_commands(
         [
             "apt-get update && apt-get install -y git curl",
-            "git clone https://github.com/beam-cloud/react-vite-shadcn-ui.git /app",
+            "git clone https://github.com/RajPrakash681/react-vite-template.git /app",
             "cd /app && rm -f pnpm-lock.yaml && npm install && echo 'npm install done........'",
             "cd /app && npm install @tanstack/react-query react-router-dom recharts sonner zod react-hook-form @hookform/resolvers date-fns uuid",
         ]
@@ -24,7 +24,7 @@ def create_app_environment() -> dict:
     print("Creating app environment...")
 
     sandbox = Sandbox(
-        name="lovable-clone",
+        name="lovable-2.0",
         cpu=1,
         memory=1024,
         image=image,
@@ -36,7 +36,7 @@ def create_app_environment() -> dict:
     sandbox.process.exec(
         "sh",
         "-c",
-        "cd /app && __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=.beam.cloud npm run dev -- --host :: --port 3000",
+        "cd /app && __VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=.cloudservice.com npm run dev -- --host :: --port 3000",
     )
 
     print("Created app environment...")

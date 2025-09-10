@@ -26,33 +26,33 @@ wss.on('connection', (ws, req) => {
   
   console.log('Connecting to target:', targetUrl);
   
-  // Create connection to Beam Cloud with headers
-  const beamWs = new WebSocket(targetUrl, {
+  // Create connection to cloud service with headers
+  const cloudWs = new WebSocket(targetUrl, {
     headers: {
       'Authorization': `Bearer ${token}`
     }
   });
   
   const connectionId = Date.now();
-  connections.set(connectionId, { client: ws, beam: beamWs });
+  connections.set(connectionId, { client: ws, cloud: cloudWs });
   
-  beamWs.on('open', () => {
-    console.log('Connected to Beam Cloud');
+  cloudWs.on('open', () => {
+    console.log('Connected to Cloud Service');
     ws.send(JSON.stringify({ type: 'connected', data: 'Connected to Beam Cloud' }));
   });
   
-  beamWs.on('message', (data) => {
-    console.log('Received from Beam:', data.toString());
+  cloudWs.on('message', (data) => {
+    console.log('Received from cloud:', data.toString());
     ws.send(data.toString());
   });
   
-  beamWs.on('close', (code, reason) => {
+  cloudWs.on('close', (code, reason) => {
     console.log('Beam connection closed:', code, reason);
     ws.close(code, reason);
     connections.delete(connectionId);
   });
   
-  beamWs.on('error', (error) => {
+  cloudWs.on('error', (error) => {
     console.error('Beam connection error:', error);
     ws.send(JSON.stringify({ type: 'error', error: error.message }));
     connections.delete(connectionId);
@@ -60,20 +60,20 @@ wss.on('connection', (ws, req) => {
   
   ws.on('message', (data) => {
     console.log('Received from client:', data.toString());
-    if (beamWs.readyState === WebSocket.OPEN) {
-      beamWs.send(data.toString());
+    if (cloudWs.readyState === WebSocket.OPEN) {
+      cloudWs.send(data.toString());
     }
   });
   
   ws.on('close', () => {
     console.log('Client disconnected');
-    beamWs.close();
+    cloudWs.close();
     connections.delete(connectionId);
   });
   
   ws.on('error', (error) => {
     console.error('Client connection error:', error);
-    beamWs.close();
+    cloudWs.close();
     connections.delete(connectionId);
   });
 });
@@ -82,7 +82,7 @@ const PORT = process.env.PORT || 3001;
 
 server.listen(PORT, () => {
   console.log(`WebSocket proxy server running on port ${PORT}`);
-  console.log(`Connect to: ws://localhost:${PORT}?target=${encodeURIComponent('wss://73b5d12d-8c0b-461d-bbb4-d4162938cf2c.app.beam.cloud')}&token=YOUR_TOKEN`);
+  console.log(`Connect to: ws://localhost:${PORT}?target=${encodeURIComponent('wss://your-cloud-service.com')}&token=YOUR_TOKEN`);
 });
 
 // Graceful shutdown

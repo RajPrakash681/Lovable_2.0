@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Lovable 2.0 Banner](https://via.placeholder.com/800x300/0a0a0a/ffffff?text=✨+Lovable+2.0+✨)
+![LovaYou'll need cloud service tokens and the websocket URL, printed in your shell after running the command below.le 2.0 Banner](https://via.placeholder.com/800x300/0a0a0a/ffffff?text=✨+Lovable+2.0+✨)
 
 [![Made with Love](https://img.shields.io/badge/Made%20with-💖-red.svg)](https://github.com/RajPrakash681/Lovable2.0)
 [![AI Powered](https://img.shields.io/badge/AI-Powered-blue.svg)](https://openai.com)
@@ -50,7 +50,7 @@ Creating Lovable 2.0 has been an incredible journey of discovery, innovation, an
 - **🎨 Design System Creation**: Built a sophisticated design system with elegant dark themes
 - **🔄 Real-time Communication**: Implemented WebSocket-based real-time updates and streaming
 - **🏗️ Microservices Architecture**: Designed scalable backend with MCP (Model Context Protocol) servers
-- **☁️ Cloud Infrastructure**: Leveraged Beam.cloud for sandboxed execution environments
+- **☁️ Cloud Infrastructure**: Integrated cloud services for sandboxed execution environments
 
 #### 💡 **Innovation Breakthroughs**
 
@@ -75,7 +75,7 @@ Creating Lovable 2.0 has been an incredible journey of discovery, innovation, an
 ```typescript
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   🎨 Frontend   │◄──►│   🤖 AI Agent    │◄──►│ ☁️ Sandbox Env  │
-│   React + TS    │    │  BAML + OpenAI   │    │  Beam.cloud     │
+│   React + TS    │    │  BAML + OpenAI   │    │  Cloud Services │
 └─────────────────┘    └──────────────────┘    └─────────────────┘
         ▲                        ▲                        ▲
         │                        │                        │
@@ -124,14 +124,14 @@ Lovable 2.0's design isn't just about aesthetics - it's about creating an enviro
 - **Node.js 20+** - The JavaScript runtime
 - **Python 3.12+** - For the AI backend
 - **OpenAI API Key** - Your gateway to AI magic
-- **Beam.cloud Account** - For cloud sandboxing
+- **Cloud Account** - For cloud sandboxing services
 
 ### ⚡ **Installation**
 
 ```bash
-# Clone the magic ✨
-git clone https://github.com/RajPrakash681/Lovable2.0
-cd Lovable2.0
+# Get the magic ✨
+git clone https://github.com/RajPrakash681/Lovable_2.0
+cd Lovable_2.0
 
 # Install Python dependencies 🐍
 pip install -r requirements.txt
@@ -182,7 +182,7 @@ Love what you see? Help make Lovable 2.0 even more amazing!
 
 ```bash
 # Fork the repository
-git fork https://github.com/RajPrakash681/Lovable2.0
+git fork https://github.com/RajPrakash681/Lovable_2.0
 
 # Create your feature branch
 git checkout -b feature/AmazingFeature
@@ -205,7 +205,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### 🙏 **Special Thanks**
 
 - **OpenAI** - For the incredible GPT models that power our AI
-- **Beam.cloud** - For providing the sandboxed execution environment
+- **Cloud Services** - For providing the sandboxed execution environment
 - **BAML** - For the elegant AI integration framework
 - **React Community** - For the amazing ecosystem and tools
 
@@ -234,7 +234,7 @@ You’ll need a [Beam token](https://platform.beam.cloud/settings/api-keys) and 
 
 ```bash
 VITE_BEAM_WS_URL=your-agent-ws-url # URL printed in your shell after running `beam serve` - fill this in after running the command below
-VITE_BEAM_TOKEN=your-beam-token # Get Beam token here: https://platform.beam.cloud/settings/api-keys
+VITE_CLOUD_TOKEN=your-cloud-token # Get your cloud service token from your provider
 ```
 
 ## Usage

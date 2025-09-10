@@ -33,7 +33,7 @@ User Input → AI Processing → Code Generation → Live Preview → User Feedb
 - **Streaming Responses**: Real-time AI output for immediate feedback
 
 #### ☁️ **Backend Infrastructure**
-- **Beam.cloud**: Sandboxed execution environments for safe code testing
+- **Cloud Services**: Sandboxed execution environments for safe code testing
 - **FastMCP**: Model Context Protocol server implementation
 - **WebSocket Communication**: Real-time bidirectional communication
 - **Python 3.12+**: Modern Python features for robust backend services
@@ -99,7 +99,7 @@ User Input → AI Processing → Code Generation → Live Preview → User Feedb
 1. **Environment Setup**
    ```bash
    # Clone the repository
-   git clone https://github.com/RajPrakash681/Lovable2.0
+   git clone https://github.com/RajPrakash681/Lovable_2.0
    cd Lovable2.0
    
    # Install dependencies
@@ -173,7 +173,7 @@ The AI system uses carefully crafted prompts that include:
 
 ### 🔒 **Sandboxed Execution**
 
-- **Isolated Environment**: Code runs in secure Beam.cloud containers
+- **Isolated Environment**: Code runs in secure cloud containers
 - **Resource Limits**: CPU, memory, and network restrictions
 - **Timeout Protection**: Automatic termination of long-running processes
 - **Code Scanning**: Static analysis for potential security issues
@@ -212,7 +212,7 @@ The AI system uses carefully crafted prompts that include:
 
 ```
 Internet → Cloudflare CDN → Load Balancer → Frontend (Vercel)
-                                         → Backend (Beam.cloud)
+                                         → Backend (Cloud Services)
                                          → Database (PostgreSQL)
                                          → File Storage (S3)
 ```

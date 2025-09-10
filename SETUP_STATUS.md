@@ -1,4 +1,4 @@
-# Lovable Clone - Setup Complete! 🎉
+# Lovable 2.0 - Setup Complete! 🎉
 
 ## ✅ What's Already Working
 
@@ -9,15 +9,15 @@
 
 ## 🔧 What You Need to Complete the Setup
 
-To get the full AI-powered functionality working, you need to set up Beam Cloud:
+To get the full AI-powered functionality working, you need to set up cloud services:
 
-### 1. Get a Beam Account
-- Sign up at https://beam.cloud
-- Get your API token from https://platform.beam.cloud/settings/api-keys
+### 1. Get a Cloud Account
+- Sign up for cloud services
+- Get your API tokens from your cloud provider
 
 ### 2. Set Up OpenAI API
 - Get your OpenAI API key from https://platform.openai.com/api-keys
-- Add it to Beam: `beam secret create OPENAI_API_KEY 'your-openai-api-key'`
+- Add it to your cloud service: `cloud secret create OPENAI_API_KEY 'your-openai-api-key'`
 
 ### 3. Configure Environment Variables
 Edit `frontend/.env` and update:
@@ -56,4 +56,4 @@ Without the Beam backend, you'll see the UI but won't be able to create AI-gener
 2. Backend changes: Edit `src/agent.py` and redeploy with `beam serve`
 3. AI prompt changes: Edit `baml_src/build.baml` and run `make generate`
 
-Enjoy building with your Lovable clone! 🎨
+Enjoy building with Lovable 2.0! 🎨
