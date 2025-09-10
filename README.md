@@ -3,7 +3,7 @@
 > **Transform your wildest ideas into stunning web applications using nothing but natural language. Experience the future of development today.**
 
 
-![LovaYou'll need cloud service tokens and the websocket URL, printed in your shell after running the command below.le 2.0 Banner](https://via.placeholder.com/800x300/0a0a0a/ffffff?text=✨+Lovable+2.0+✨)
+ 
 
 [![Made with Love](https://img.shields.io/badge/Made%20with-💖-red.svg)](https://github.com/RajPrakash681/Lovable2.0)
 [![AI Powered](https://img.shields.io/badge/AI-Powered-blue.svg)](https://openai.com)
